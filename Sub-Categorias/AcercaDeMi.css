@@ -1,0 +1,129 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Sección principal con imagen de fondo */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: url('pixelcut-export\ \(2\).jpeg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sep {
+    background-image: url(pixelcut-export\ \(2\).jpeg);
+    padding: 300px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay negro semi-transparente */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima de la superposición */
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: moveText 5s linear infinite;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); /* Contorno en el texto */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.btn {
+    background-color: #0ef;
+    color: #1f242d;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0ef;
+}
+
+/* Sección Acerca de */
+.about-section {
+    padding: 50px 20px;
+    background-color: #323946; /* Fondo de sección */
+}
+
+.skills-section {
+    padding: 50px 20px;
+    background-color: #1f242d; /* Fondo de sección */
+}
+
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tarjeta de habilidades */
+.skill-card {
+    background-color: #2e3540;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, background-color 0.3s;
+    width: 200px; /* Ancho fijo para las tarjetas */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: #3b434e;
+}
+
+.skill-card img {
+    width: 48px; /* Tamaño del logo */
+    height: 48px; /* Tamaño del logo */
+}
+
+/* Sección de contacto */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #323946; /* Fondo de sección */
+    text-align: center;
+}
